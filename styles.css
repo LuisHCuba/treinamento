@@ -900,4 +900,227 @@ footer {
     .demo-items {
         grid-template-columns: 1fr;
     }
+}
+
+/* Melhorias para versão mobile */
+
+/* Ajustes gerais para responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Cabeçalho otimizado para mobile */
+    header {
+        padding: 20px 0;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container h1 {
+        font-size: 2.2rem;
+    }
+    
+    .logo-container .tagline {
+        font-size: 1rem;
+    }
+    
+    .training-meta {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .meta-item {
+        padding: 6px 12px;
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .training-banner {
+        padding: 20px 15px;
+        margin-top: 10px;
+    }
+    
+    .training-banner h2 {
+        font-size: 1.6rem;
+    }
+    
+    .training-status {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+        right: 15px;
+    }
+    
+    /* Navegação em menu hamburguer */
+    nav {
+        position: relative;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 12px 15px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    /* Ajustes para timeline */
+    .timeline-item {
+        padding-left: 40px;
+    }
+    
+    .timeline-dot {
+        width: 16px;
+        height: 16px;
+        left: 14px;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .sub-topics {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .sub-topics p {
+        font-size: 0.9rem;
+    }
+    
+    /* Cards mais estreitos e empilhados */
+    .card-container, 
+    .powerbi-grid, 
+    .ia-grid.simplified,
+    .demo-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .card, 
+    .powerbi-card, 
+    .ia-card {
+        padding: 20px;
+    }
+    
+    .card-icon, 
+    .powerbi-card .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .card-details {
+        padding: 15px;
+    }
+    
+    .card-details ul li {
+        margin-bottom: 5px;
+    }
+    
+    .practical-example {
+        padding: 12px;
+        margin-top: 15px;
+    }
+    
+    /* Ajustes na seção do Power BI */
+    .powerbi-demo {
+        padding: 20px 15px;
+    }
+    
+    .demo-item {
+        padding: 12px;
+    }
+    
+    /* IA cards e licenças */
+    .license-info.simplified {
+        flex-direction: column;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .license-info.simplified h3 {
+        margin: 0 0 10px 0;
+        justify-content: center;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    header {
+        padding: 15px 0;
+    }
+    
+    .logo-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .training-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .meta-item {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .training-banner h2 {
+        font-size: 1.4rem;
+    }
+    
+    .timeline:before {
+        left: 15px;
+    }
+    
+    .timeline-dot {
+        left: 9px;
+    }
+    
+    .timeline-item {
+        padding-left: 35px;
+    }
+    
+    .card, 
+    .powerbi-card, 
+    .ia-card {
+        padding: 15px;
+    }
 } 
